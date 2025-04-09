@@ -1,0 +1,7 @@
+{
+  "delete": true,
+  "directory": ["./src/common", "./src/special"],
+  "exclude": [],
+  "location": "all",
+  "singleQuotes": true
+}
