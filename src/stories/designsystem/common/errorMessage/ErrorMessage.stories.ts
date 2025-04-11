@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ErrorMessage } from '../../../common';
+import { ErrorMessage } from '../../../../common';
 
 const meta: Meta<typeof ErrorMessage> = {
-  title: 'Common/error/ErrorMessage',
+  title: 'desingSystem/Common/error/ErrorMessage',
   component: ErrorMessage,
   parameters: {
     layout: 'centered',

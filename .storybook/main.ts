@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/experimental-addon-test',
     '@storybook/addon-mdx-gfm',
+    '@storybook/addon-themes',
   ],
 
   framework: {

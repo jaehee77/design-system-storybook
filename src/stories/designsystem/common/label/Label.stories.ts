@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 // import { fn } from '@storybook/test';
 
-import { Label } from '../../../common';
+import { Label } from '../../../../common';
 
 const meta: Meta<typeof Label> = {
-  title: 'Common/Label/Label',
+  title: 'desingSystem/Common/Label/Label',
   component: Label,
   parameters: {
     layout: 'centered',

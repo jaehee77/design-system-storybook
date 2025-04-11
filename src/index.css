@@ -10,6 +10,7 @@
   --color-mono300: #d6d7d9;
   --color-error: #d01e1e;
   --color-social: #395997;
+  --color-black-opacity: rgba(255, 255, 255, 0.1);
 
   --text-xs: 12px;
   --text-xs--line-height: 18px;
@@ -30,6 +31,9 @@
   --text-2xl--line-height: 36px;
   --text-2xl--letter-spacing: 0;
   --text-2xl--font-weight: 700;
+
+  --radius-primary: 5px;
+  --radius-tag-button: 18px;
 }
 
 :root {
@@ -43,6 +47,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --text-color: #000;
+  --bg-color: #fff;
+}
+.dark {
+  --text-color: #fff;
+  --bg-color: #000;
+}
+
+.dark {
+  body {
+    background-color: red !important;
+    color: white !important;
+  }
 }
 
 /* 기본 배경, 글자색 설정 */
@@ -50,6 +68,12 @@ body {
   font-family: 'Noto Sans KR';
   /* background-color: white;
   color: black; */
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  &.dark {
+    --text-color: #fff;
+    --bg-color: #000;
+  }
 }
 /* 
 @media (prefers-color-scheme: dark) {
@@ -58,3 +82,25 @@ body {
     color: white;
   }
 } */
+
+@layer components {
+  .parent {
+    .text-error {
+      @apply absolute;
+    }
+  }
+}
+.title {
+  color: var(--text-color);
+}
+
+/* root 라이트테마 기본 변수 */
+:root {
+  --text-color: #000;
+  --bg-color: #fff;
+}
+/* 다크 테마 기본변수 */
+.dark {
+  --text-color: #fff;
+  --bg-color: #000;
+}

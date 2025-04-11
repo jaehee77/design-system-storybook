@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 // import { fn } from '@storybook/test';
 
-import { DefaultTextField } from '../../../common';
+import { DefaultTextField } from '../../../../common';
 
 const meta: Meta<typeof DefaultTextField> = {
-  title: 'Common/textField/DefaultTextField',
+  title: 'desingSystem/Common/textField/DefaultTextField',
   component: DefaultTextField,
   parameters: {
     layout: 'centered',
@@ -26,7 +26,7 @@ const meta: Meta<typeof DefaultTextField> = {
       action: 'clicked',
       description: '버튼 클릭 이벤트',
     },
-    onChange: {
+    onChangeInput: {
       action: 'clicked',
       description: '텍스트 필드 값 변경 이벤트',
     },
