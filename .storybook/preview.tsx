@@ -26,6 +26,12 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    backgrounds: {
+      values: [
+        { name: 'light', value: '#fff' },
+        { name: 'dark', value: '#333' },
+      ],
+    },
     layout: 'fullscreen', // 또는 'padded', 'centered'
 
     themes: {
